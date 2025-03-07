@@ -79,3 +79,22 @@ function typeEffect() {
 
 document.addEventListener("DOMContentLoaded", typeEffect);
 
+
+    // Show the button when user scrolls down
+    window.onscroll = function () {
+        let backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Function to scroll to the top smoothly
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
