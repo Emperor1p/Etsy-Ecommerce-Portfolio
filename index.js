@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const textArray = ["Etsy Specialist", "SEO Expert", "Digital Product Designer"];
+const textArray = ["Etsy Specialist", "SEO Expert", "Digital Product Designer", "Professional Crocheter", " Mockup Designer", " Etsy Affiliate Manager", "Etsy Content Writer", "Etsy Marketing Manager", "Etsy Product Researcher", "Etsy Product Lister", "Etsy Shop Manager", "Etsy Event Organizer", "Etsy Virtual Reality Designer", "Etsy 3D Modeler"];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
