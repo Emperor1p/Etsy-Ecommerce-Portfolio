@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Etsy Specialist</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
 
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg  sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -32,16 +34,18 @@
         </div>
     </nav>
 
-
+    <div class="marquee mt-3">
+        <h3>Welcome to My Portfolio</h3>
+    </div>
 
     <!-- About Section -->
-    <section id="about" class="py-5 aboutme">
+    <section id="about" class=" aboutme">
         <div class="container mt-5">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h2 class="text-left ">About Me</h2>
-                    <h3>Welcome to My Portfolio</h3>
-                    <p>Etsy Specialist | SEO Expert | Digital Product Designer</p>
+                    <h2 class="text-left " style="font-size: 60px;">About Me</h2>
+
+                    <p style="font-size: 3em;">I am a <span id="typing-text" ></span><span class="cursor">|</span></p>
                     <p class="text-left">I am a dedicated Etsy freelancer specializing in helping sellers optimize their
                         stores for better visibility and increased sales. With experience across various product
                         categories
@@ -58,44 +62,46 @@
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="img/Peter.jpg" class="img-fluid rounded-circle h-3" alt="My Picture">
+                    <img src="img/Peter.jpg" class="img-fluid profile-img h-3" alt="My Picture">
                 </div>
+
             </div>
         </div>
     </section>
 
     <section id="expertise" class="py-5 ">
         <div class="container">
-            <h2 class="text-center pb-3">My Expertise</h2>
+            <h2 class="text-center pb-3" style="color: #0d6dfc;">My Expertise</h2>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-4 expertise-item">
                     <div class="card p-3 mb-3">
-                        <p>✅ Etsy Store Setup & Optimization</p>
+                        <p><span class="blue-checkmark"></span> Etsy Store Optimization</p>
+
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 expertise-item">
                     <div class="card p-3 mb-3">
-                        <p>✅ SEO-Driven Product Listings</p>
+                        <p> SEO-Driven Product Listings</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 expertise-item">
                     <div class="card p-3 mb-3">
-                        <p>✅ Digital Product Design & Mockups</p>
+                        <p> Digital Product Design & Mockups</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 expertise-item">
                     <div class="card p-3 mb-3">
-                        <p>✅ Etsy Ads & External Marketing Strategies</p>
+                        <p> Etsy Ads & External Marketing Strategies</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 expertise-item">
                     <div class="card p-3 mb-3">
-                        <p>✅ Conversion Rate Optimization</p>
+                        <p> Conversion Rate Optimization</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 expertise-item">
                     <div class="card p-3 mb-3">
-                        <p>✅ Virtual Assistance for Etsy Sellers</p>
+                        <p> Virtual Assistance for Etsy Sellers</p>
                     </div>
                 </div>
             </div>
@@ -104,21 +110,21 @@
 
     <section id="case-study" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Case Studies: Transforming Etsy Stores</h2>
+            <h2 class="text-center mb-4" style="color: #007ce8;;">Case Studies: Transforming Etsy Stores</h2>
 
             <div class="card p-4 shadow-sm border-0">
-                <h3 class="mb-3">Case Study 1: Boosting Sales for a Printable Planner Seller</h3>
+                <h3 class="mb-3" style="color: black;">Case Study 1: Boosting Sales for a Printable Planner Seller</h3>
 
-                <p><strong>Client Challenge:</strong>
+                <p style="color: black;"><strong>Client Challenge:</strong>
                     A seller offering printable planners struggled with low sales despite running Etsy ads. Their
                     listings lacked SEO optimization, had unengaging product images, and relied heavily on paid
                     advertising with little return.
                 </p>
 
-                <div class="alert alert-info">
+                <div class="alert">
                     <strong>My Strategy:</strong>
                     <ul class="list-unstyled">
-                        <li>✅ Conducted in-depth keyword research and optimized product titles, descriptions, and tags.
+                        <li> Conducted in-depth keyword research and optimized product titles, descriptions, and tags.
                         </li>
                         <li>✅ Improved product presentation by creating high-quality mockups and lifestyle images.</li>
                         <li>✅ Shifted marketing focus from paid ads to organic strategies like Pinterest marketing and
@@ -154,7 +160,7 @@
                 <!-- Images Row -->
                 <div class="row mt-3">
                     <div class="col-md-6">
-                        <img src="img/image.png" class="img-fluid rounded shadow-sm" alt="Etsy Store Screenshot">
+                        <img src="image.png" class="img-fluid rounded shadow-sm" alt="Etsy Store Screenshot">
                     </div>
                     <div class="col-md-6">
                         <img src="img/traffic2.jpg" class="img-fluid rounded shadow-sm" alt="Etsy Stats Screenshot">
@@ -166,7 +172,7 @@
 
     <section id="case-study-2" class="py-5">
         <div class="container">
-            <div class="card p-4 shadow-sm border-0">
+            <div class="card p-4 shadow border-0">
                 <h3 class="mb-3">Case Study 2: Increasing Sales for a Crochet Pattern Seller</h3>
 
                 <p><strong>Client Challenge:</strong>
@@ -193,7 +199,7 @@
                 <!-- Images Row -->
                 <div class="row mt-3">
                     <div class="col-md-6">
-                        <img src="img/image2.png" class="img-fluid rounded shadow-sm" alt="Crochet Pattern Etsy Store">
+                        <img src="image2.png" class="img-fluid rounded shadow-sm" alt="Crochet Pattern Etsy Store">
                     </div>
                     <div class="col-md-6">
                         <img src="img/traffic1.jpg" class="img-fluid rounded shadow-sm"
@@ -204,7 +210,7 @@
         </div>
     </section>
 
-    <section id="portfolio" class="py-5 bg-light">
+    <section id="portfolio" class="py-5 ">
         <div class="container">
             <h2 class="text-center mb-4">Portfolio Showcase</h2>
             <p class="text-center text-muted">
@@ -216,7 +222,7 @@
                 <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
                 <button class="btn btn-outline-success filter-btn" data-filter="planners">Planners & Templates</button>
                 <button class="btn btn-outline-danger filter-btn" data-filter="mockups">Mockups & Branding</button>
-                <button class="btn btn-outline-dark filter-btn" data-filter="crochet">Crochet Patterns</button>
+                <button class="btn btn-outline-light filter-btn" data-filter="crochet">Crochet Patterns</button>
             </div>
 
             <!-- Portfolio Gallery -->
@@ -327,8 +333,8 @@
 
     <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4 fw-bold">What My Services Include</h2>
-            <p class="text-center text-muted">Helping Etsy sellers optimize, enhance, and market their stores for better
+            <h2 class="text-center mb-4 fw-bold" style="color: #0d6dfc;">What My Services Include</h2>
+            <p class="text-center text-dark ">Helping Etsy sellers optimize, enhance, and market their stores for better
                 visibility and higher sales.</p>
 
             <div class="row g-4">
@@ -404,7 +410,7 @@
     </section>
 
 
-    <section id="testimonials" class="py-5 bg-light">
+    <section id="testimonials" class="py-5 bg-dark">
         <div class="container">
             <h2 class="text-center mb-4">What My Clients Say</h2>
             <div class="row">

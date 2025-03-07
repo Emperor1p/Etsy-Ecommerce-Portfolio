@@ -45,3 +45,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+const textArray = ["Etsy Specialist", "SEO Expert", "Digital Product Designer"];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const element = document.getElementById("typing-text");
+
+function typeEffect() {
+    const currentText = textArray[textIndex];
+
+    if (isDeleting) {
+        element.innerText = currentText.substring(0, charIndex--);
+    } else {
+        element.innerText = currentText.substring(0, charIndex++);
+    }
+
+    let typingSpeed = isDeleting ? 50 : 100; 
+
+    // Hold the last letter longer before deleting
+    if (!isDeleting && charIndex === currentText.length + 1) {  
+        typingSpeed = 5000; 
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % textArray.length; 
+        element.classList.add("fade"); 
+        setTimeout(() => element.classList.remove("fade"), 500);
+    }
+
+    setTimeout(typeEffect, typingSpeed);
+}
+
+document.addEventListener("DOMContentLoaded", typeEffect);
+
